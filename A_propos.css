@@ -1,0 +1,119 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+.main-nav {
+    background-color: #333;
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: #ff9800;
+}
+
+.content .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #222;
+    text-align: center;
+}
+
+.content p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+@media (max-width: 600px) {
+    .main-nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .content .container {
+        padding: 15px;
+    }
+}
+/* ...existing code... */
+
+/* --------- RESPONSIVE DESIGN --------- */
+@media (max-width: 900px) {
+    .header-container {
+        height: auto;
+        padding: 30px 10px;
+    }
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+    .intro h1,
+    .apropos h1 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 600px) {
+    .header-container {
+        padding: 20px 5px;
+        flex-direction: column;
+    }
+    .profile-img {
+        width: 90px;
+        height: 90px;
+        margin-bottom: 10px;
+    }
+    .intro h1,
+    .apropos h1 {
+        font-size: 1.1em;
+    }
+    .cta-buttons {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    .section {
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+    .apropos {
+        padding: 20px 5px;
+    }
+    .apropos p {
+        font-size: 1em;
+    }
+}
