@@ -4,29 +4,162 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compétences - Angela Kabika Odia</title>
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="compétence.css">
 </head>
 <body>
 
-    <nav class="main-nav">
-        <ul>
-            <li><a href="Accueil du portfolio.html">Accueil</a></li>
-            <li><a href="A propos.html">À propos</a></li>
-            <li><a href="compétences.html">Compétences</a></li>
-            <li><a href="cont.html">Contact</a></li>
-        </ul>
-    </nav>
-
-    <section class="content">
-        <div class="container">
-            <h1>Mes compétences</h1>
-            <ul>
-                <li>HTML, CSS, python</li>
-                <li>Communication visuelle</li>
-                <li>Gestion de projet</li>
-                <li> S'adapte à plusieur défi</li>
+    <!-- Navigation fixe -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="accueil.html" class="logo">AKO<span>.dev</span></a>
+            <ul class="nav-links">
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="A propos.html">À propos</a></li>
+                <li><a href="comp.html" class="active">Compétences</a></li>
+                <li><a href="cont.html" class="btn-nav">Contact</a></li>
             </ul>
         </div>
- 
+    </nav>
+
+    <!-- Section Principale -->
+    <main class="skills-section">
+        <div class="container">
+            
+            <!-- En-tête -->
+            <div class="skills-header">
+                
+                <h1>Mes <span class="highlight">Compétences</span> & Projets</h1>
+                <p class="subtitle">Découvrez mes capacités techniques, mes qualités humaines ainsi que les solutions applicatives que j'ai conçues.</p>
+            </div>
+
+            <!-- Grille de Compétences -->
+            <div class="skills-grid">
+                
+                <!-- Carte 1 : Développement Web & Logiciel -->
+                <div class="glass-card skill-card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3>Développement Web & Logiciel</h3>
+                    <ul class="skills-list">
+                        <li><i class="fa-solid fa-check"></i> HTML5 / CSS3 / JavaScript</li>
+                        <li><i class="fa-solid fa-check"></i> PHP & Programmation Python</li>
+                        <li><i class="fa-solid fa-check"></i> Conception d'interfaces dynamiques et réactives</li>
+                        <li><i class="fa-solid fa-check"></i> Intégration de modules spécifiques (scanners, analyse)</li>
+                    </ul>
+                </div>
+
+                <!-- Carte 2 : Modélisation & Conception -->
+                <div class="glass-card skill-card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <h3>Données & Conception</h3>
+                    <ul class="skills-list">
+                        <li><i class="fa-solid fa-check"></i> Bases de données MySQL & Administration phpMyAdmin</li>
+                        <li><i class="fa-solid fa-check"></i> Modélisation de données (Merise : MCD, MLD, MPD)</li>
+                        <li><i class="fa-solid fa-check"></i> Architecture de données & Suivi applicatif</li>
+                        <li><i class="fa-solid fa-check"></i> Versioning & Gestion de projets avec GitHub</li>
+                    </ul>
+                </div>
+
+                <!-- Carte 3 : Compétences Humaines (Soft Skills) -->
+                <div class="glass-card skill-card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+                    <h3>Qualités Humaines & Relationnel</h3>
+                    <ul class="skills-list">
+                        <li><i class="fa-solid fa-check"></i> Communication orale fluide & Aisance relationnelle</li>
+                        <li><i class="fa-solid fa-check"></i> Écoute active & Gestion du besoin utilisateur</li>
+                        <li><i class="fa-solid fa-check"></i> Esprit d'équipe & Collaboration efficace</li>
+                        <li><i class="fa-solid fa-check"></i> Grande flexibilité & Adaptation aux nouveaux défis</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Section Projets & Réalisations Concrètes -->
+            <div class="glass-card showcase-section">
+                <h2><i class="fa-solid fa-laptop-code"></i> Aperçu de mes Réalisations Appliquées</h2>
+                <p>En plus de mes projets phares, j'ai eu l'opportunité de concevoir et développer diverses applications répondant à des besoins variés :</p>
+
+                <div class="achievements-list">
+                    <div class="achievement-item">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                        <div>
+                            <h4>Application de Supermarché & Scanner</h4>
+                            <p>Système intégrant la lecture/scan de produits pour simplifier la vérification d'articles et la gestion de caisse.</p>
+                        </div>
+                    </div>
+
+                    <div class="achievement-item">
+                        <i class="fa-solid fa-school"></i>
+                        <div>
+                            <h4>Gestion des Auditoriums & Horaires Faculté</h4>
+                            <p>Plateforme dédiée à l'organisation, la réservation et le suivi d'occupation des espaces d'enseignement universitaires.</p>
+                        </div>
+                    </div>
+
+                    <div class="achievement-item">
+                        <i class="fa-solid fa-users-gear"></i>
+                        <div>
+                            <h4>Système de Gestion & Suivi des Stagiaires</h4>
+                            <p>Application complète avec espaces administrateur/encadreur et stagiaire pour le rapportage et la transmission des résultats.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GALERIE DE DÉFILEMENT (IMAGES DE MES PROJETS) -->
+            <div class="gallery-section">
+                <h3 class="gallery-title"><i class="fa-solid fa-images"></i> Galerie de mes Réalisations</h3>
+                <p class="gallery-subtitle">Aperçu visuel de mes applications (survolez pour faire défiler) :</p>
+                
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <!-- Remplace le 'src' par le chemin de tes vraies images -->
+                        <div class="carousel-slide">
+                            <img src="https://via.placeholder.com/400x250/0f2027/00d2ff?text=App+Supermarché+%2B+Scan" alt="Application Supermarché">
+                            <span>Scan Produit Supermarché</span>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://via.placeholder.com/400x250/203a43/00d2ff?text=Gestion+Auditoriums" alt="Gestion Auditoriums">
+                            <span>Gestion des Auditoriums</span>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://via.placeholder.com/400x250/2c5364/00d2ff?text=Gestion+des+Stagiaires" alt="Gestion Stagiaires">
+                            <span>Gestion des Stagiaires</span>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://via.placeholder.com/400x250/0f2027/00d2ff?text=Analyse+Hémoglobine" alt="Analyse Hémoglobine">
+                            <span>Analyse Hémoglobine</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Final -->
+            <div class="skills-cta">
+                <p>Souhaitez-vous échanger sur une compétence spécifique ou collaborer ?</p>
+                <div class="cta-buttons">
+                    <a href="cont.html" class="btn btn-primary">Discuter d'un projet <i class="fa-solid fa-paper-plane"></i></a>
+                    <a href="A propos.html" class="btn btn-secondary">Revoir mon parcours</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <div class="container footer-content">
+            <p>© 2026 Angela Kabika Odia — Tous droits réservés.</p>
+        </div>
+    </footer>
+
 </body>
 </html>

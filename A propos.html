@@ -1,32 +1,94 @@
 <!DOCTYPE html>
-
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>À propos - Angela Kabika Odia</title>
-    <link rel="stylesheet" href="A_propos.css">
+    <!-- Police Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Icônes FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="A propos.css">
 </head>
 <body>
 
-```
-<nav class="main-nav">
-    <ul>
-        <li><a href="accueil du portfolio.html">Accueil</a></li>
-        <li><a href="A propos.html" class="active">À propos</a></li>
-        <li><a href="comp.html">Compétences</a></li>
-        <li><a href="cont.html">Contact</a></li>
-    </ul>
-</nav>
+    <!-- Navigation fixe identique à l'accueil -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="accueil.html" class="logo">AKO<span>.dev</span></a>
+            <ul class="nav-links">
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="A propos.html" class="active">À propos</a></li>
+                <li><a href="comp.html">Compétences</a></li>
+                <li><a href="cont.html" class="btn-nav">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-<section class="content">
-    <div class="container">
-        <h1>À propos de moi</h1>
-        <p>Je m'appelle Angela Kabika Odia. Je suis étudiante en informatique à l'université protestante au congo, passionnée par le développement web et tout ce qui touche aux technologies de l'informatique design, programmation.</p>
-        <p>Mon parcours m'a permis de développer des compétences solides dans la création web ,grâce à ma formation et à mon intérêt pour le développemnt,j'ai acquis une base solide en HTML,CSS.</p>
-    </div>
-</section>
-```
+    <!-- Contenu Principal À Propos -->
+    <main class="about-section">
+        <div class="container">
+            
+            <!-- En-tête de la page -->
+            <div class="about-header">
+                <span class="badge">Mon Parcours & Ma Philosophie</span>
+                <h1>À propos de <span class="highlight">moi</span></h1>
+                <p class="subtitle">Découvrez qui je suis, ma passion pour l'informatique et ma vision du travail en équipe.</p>
+            </div>
+
+            <!-- Carte principale : Présentation globale -->
+            <div class="glass-card main-bio">
+                <div class="bio-icon">
+                    <i class="fa-solid fa-user-astronaut"></i>
+                </div>
+                <div class="bio-text">
+                    <h2>Bienvenue ! Je suis Angela Kabika Odia</h2>
+                    <p>Étudiante passionnée en 3<sup>ème</sup> année de Licence en Informatique à l'<strong>Université Protestante au Congo (UPC)</strong>, je détiens déjà un diplôme de Bac+2 validé. Mon univers tourne autour du génie logiciel, du développement web et de la création d'interfaces utilisateur fluides, esthétiques et ergonomiques.</p>
+                    <p>Pour moi, l'informatique ne se limite pas à écrire du code : c'est un moyen concret de résoudre des problèmes réels, de simplifier le quotidien des utilisateurs et d'apporter une réelle valeur ajoutée aux entreprises.</p>
+                </div>
+            </div>
+
+            <!-- Grille à 2 colonnes : Technique vs Qualités Humaines -->
+            <div class="about-grid">
+                
+                <!-- Bloc 1 : Vision Technique & Curiosité -->
+                <div class="glass-card grid-card">
+                    <div class="card-header">
+                        <i class="fa-solid fa-code"></i>
+                        <h3>Rigueur & Développement</h3>
+                    </div>
+                    <p>Mon cursus universitaire et mes projets personnels m'ont permis de développer une base technique solide. Qu'il s'agisse de concevoir des bases de données avec Merise/MySQL ou de construire des applications web interactives (PHP, HTML, CSS, JavaScript), j'aime comprendre la logique en profondeur et produire un travail propre et bien structuré.</p>
+                </div>
+
+                <!-- Bloc 2 : Qualités Humaines & Esprit d'équipe -->
+                <div class="glass-card grid-card">
+                    <div class="card-header">
+                        <i class="fa-solid fa-users"></i>
+                        <h3>Communication & Atouts Humains</h3>
+                    </div>
+                    <p>Au-delà de l'écran, je suis une personne dotée d'une <strong>communication facile</strong> et d'un excellent relationnel. J'adore le <strong>travail en équipe</strong>, le partage d'idées et l'entraide. Ma grande <strong>flexibilité</strong> me permet de m'adapter rapidement aux nouveaux environnements, d'apprendre de nouvelles technologies avec enthousiasme et de relever des défis diversifiés.</p>
+                </div>
+
+            </div>
+
+            <!-- Appel à l'action final -->
+            <div class="about-cta">
+                <p>Un projet en tête ou une opportunité de collaboration ?</p>
+                <div class="cta-buttons">
+                    <a href="cont.html" class="btn btn-primary">Me contacter <i class="fa-solid fa-paper-plane"></i></a>
+                    <a href="comp.html" class="btn btn-secondary">Découvrir mes compétences</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <div class="container footer-content">
+            <p>© 2026 Angela Kabika Odia — Tous droits réservés.</p>
+        </div>
+    </footer>
 
 </body>
 </html>

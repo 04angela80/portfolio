@@ -1,4 +1,4 @@
-/* --------- VARIABLES ET THÈME HARMONISÉ --------- */
+/* --------- VARIABLES HARMONISÉES AVEC L'ACCUEIL --------- */
 :root {
     --bg-gradient: radial-gradient(circle at top, #0f2027, #203a43, #2c5364);
     --primary-color: #00d2ff;
@@ -9,7 +9,7 @@
     --card-border: rgba(255, 255, 255, 0.12);
 }
 
-/* --------- RESET GÉNÉRAL --------- */
+/* --------- RESET & FONT GÉNÉRALE --------- */
 * {
     margin: 0;
     padding: 0;
@@ -21,7 +21,7 @@ body {
     background: var(--bg-gradient);
     background-attachment: fixed;
     color: var(--text-color);
-    line-height: 1.6;
+    line-height: 1.7;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -42,7 +42,7 @@ ul {
     list-style: none;
 }
 
-/* --------- NAVBAR --------- */
+/* --------- NAVBAR HARMONISÉE --------- */
 .navbar {
     padding: 18px 0;
     backdrop-filter: blur(12px);
@@ -99,13 +99,13 @@ ul {
     box-shadow: 0 4px 12px rgba(0, 210, 255, 0.25);
 }
 
-/* --------- SECTION COMPÉTENCES --------- */
-.skills-section {
+/* --------- SECTION À PROPOS --------- */
+.about-section {
     padding: 50px 0 80px 0;
     flex: 1;
 }
 
-.skills-header {
+.about-header {
     text-align: center;
     margin-bottom: 45px;
 }
@@ -122,7 +122,7 @@ ul {
     margin-bottom: 15px;
 }
 
-.skills-header h1 {
+.about-header h1 {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 10px;
@@ -137,190 +137,97 @@ ul {
 .subtitle {
     color: var(--text-muted);
     font-size: 1.05rem;
-    max-width: 650px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
-/* --------- GRILLE DES CARTE GLASSMORPHISM --------- */
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
-    margin-bottom: 40px;
-}
-
+/* --------- CARTE GLASSMORPHISM (STYLE VERRE) --------- */
 .glass-card {
     background: var(--card-bg);
     border: 1px solid var(--card-border);
     border-radius: 18px;
-    padding: 30px;
+    padding: 35px;
     backdrop-filter: blur(10px);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
 .glass-card:hover {
-    transform: translateY(-5px);
     border-color: rgba(0, 210, 255, 0.4);
 }
 
-.card-icon {
-    font-size: 2rem;
+.main-bio {
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.bio-icon {
+    font-size: 2.2rem;
     color: var(--primary-color);
+    background: rgba(0, 210, 255, 0.1);
+    padding: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 210, 255, 0.2);
+}
+
+.bio-text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.bio-text p {
+    color: var(--text-muted);
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.bio-text p:last-child {
+    margin-bottom: 0;
+}
+
+/* --------- GRILLE EN 2 COLONNES --------- */
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.grid-card .card-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
     margin-bottom: 15px;
 }
 
-.skill-card h3 {
-    font-size: 1.3rem;
-    margin-bottom: 20px;
-    color: #fff;
-    border-bottom: 1px solid var(--card-border);
-    padding-bottom: 10px;
-}
-
-.skills-list li {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 12px;
-    color: var(--text-muted);
-    font-size: 0.95rem;
-}
-
-.skills-list li i {
-    color: var(--primary-color);
-    font-size: 0.85rem;
-}
-
-/* --------- SECTION REALISATIONS --------- */
-.showcase-section {
-    margin-bottom: 40px;
-}
-
-.showcase-section h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.showcase-section h2 i {
-    color: var(--primary-color);
-}
-
-.showcase-section > p {
-    color: var(--text-muted);
-    margin-bottom: 25px;
-}
-
-.achievements-list {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.achievement-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 18px;
-    background: rgba(255, 255, 255, 0.03);
-    padding: 18px;
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.achievement-item i {
-    font-size: 1.6rem;
-    color: var(--primary-color);
-    background: rgba(0, 210, 255, 0.1);
-    padding: 12px;
-    border-radius: 10px;
-}
-
-.achievement-item h4 {
-    color: #fff;
-    font-size: 1.1rem;
-    margin-bottom: 5px;
-}
-
-.achievement-item p {
-    color: var(--text-muted);
-    font-size: 0.9rem;
-}
-
-/* --------- GALERIE ET DÉFILEMENT (CAROUSEL) --------- */
-.gallery-section {
-    margin-bottom: 40px;
-    text-align: center;
-}
-
-.gallery-title {
+.grid-card .card-header i {
     font-size: 1.4rem;
-    color: #fff;
-    margin-bottom: 5px;
-}
-
-.gallery-title i {
     color: var(--primary-color);
 }
 
-.gallery-subtitle {
+.grid-card h3 {
+    font-size: 1.25rem;
+    color: #fff;
+}
+
+.grid-card p {
     color: var(--text-muted);
     font-size: 0.95rem;
-    margin-bottom: 20px;
 }
 
-.carousel-container {
-    overflow-x: auto;
-    padding-bottom: 15px;
-    scrollbar-width: thin;
-    scrollbar-color: var(--primary-color) transparent;
-}
-
-.carousel-track {
-    display: flex;
-    gap: 20px;
-    width: max-content;
-}
-
-.carousel-slide {
-    background: var(--card-bg);
-    border: 1px solid var(--card-border);
-    border-radius: 14px;
-    padding: 12px;
-    width: 280px;
+/* --------- APPEL À L'ACTION & BOUTONS --------- */
+.about-cta {
     text-align: center;
-    transition: transform 0.3s ease;
+    margin-top: 40px;
 }
 
-.carousel-slide:hover {
-    transform: scale(1.03);
-    border-color: var(--primary-color);
-}
-
-.carousel-slide img {
-    width: 100%;
-    height: 160px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-
-.carousel-slide span {
-    font-size: 0.85rem;
-    color: var(--text-muted);
-    font-weight: 600;
-}
-
-/* --------- CTA & FOOTER --------- */
-.skills-cta {
-    text-align: center;
-    margin-top: 30px;
-}
-
-.skills-cta p {
+.about-cta p {
     font-size: 1.1rem;
     margin-bottom: 20px;
     color: #fff;
@@ -362,6 +269,7 @@ ul {
     box-shadow: 0 8px 20px rgba(0, 210, 255, 0.4);
 }
 
+/* --------- FOOTER --------- */
 footer {
     text-align: center;
     padding: 25px 0;
@@ -371,18 +279,28 @@ footer {
     margin-top: auto;
 }
 
-/* --------- RESPONSIVE --------- */
+/* --------- RESPONSIVE DESIGN --------- */
 @media (max-width: 768px) {
-    .skills-header h1 {
-        font-size: 2rem;
+    .main-bio {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
     }
 
-    .carousel-slide {
-        width: 230px;
+    .about-header h1 {
+        font-size: 1.9rem;
+    }
+
+    .glass-card {
+        padding: 25px;
     }
 }
 
 @media (max-width: 600px) {
+    .nav-links {
+        gap: 15px;
+    }
+
     .cta-buttons {
         flex-direction: column;
         align-items: stretch;
